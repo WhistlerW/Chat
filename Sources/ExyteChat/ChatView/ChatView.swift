@@ -642,6 +642,12 @@ public extension ChatView {
         return view
     }
     
+    func setLocalization(_ localization: ChatLocalization) -> ChatView {
+        var view = self
+        view.localization = localization
+        return view
+    }
+    
     // MARK: - Thinking Mode Configuration
     
     /// Configure thinking mode support and state
